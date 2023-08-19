@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/images/background\ image\ 1.png");
+    background-repeat: no-repeat;
+    /* background-color: #fab1a0; */
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    padding: 20px 0px;
+    cursor: pointer;
+
+}
+
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.content h1{
+    font-size: 64px;
+    font-weight: 600px;
+}
+
+.content h1 span{
+    color: crimson;
+}
+
+.content button{
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    padding: 12px 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+
+.launched-time{
+    display: flex;
+}
+
+.launched-time div{
+    flex-basis: 100px;
+}
+
+.launched-time div p{
+    font-size: 60px;
+    margin-bottom: -14px;
+}
+
+.rocket{
+    margin-bottom: 50px;
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}

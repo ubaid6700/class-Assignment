@@ -1,0 +1,74 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 10vw;
+}
+
+.heading1{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: .3vw;
+    font-weight: bold;
+    color: lightcoral;
+}
+#inputPlace{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 8vh;
+}
+
+#inputPlace p{
+    color: mediumspringgreen;
+    font-size: 200%;
+}
+
+#inputPlace input[type=number]{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+#inputPlace [type=submit]{
+    background-color: navajowhite;
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    transition: .2s ease-in-out;
+}
+
+#inputPlace [type=submit]:hover{
+    background-color: olive;
+}
+
+#cardArea{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+}
+
+.card{
+    margin-bottom: 5vh;
+    color: steelblue;
+}
